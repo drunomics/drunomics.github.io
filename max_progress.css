@@ -1,0 +1,77 @@
+  .rules-progress-container {
+       float: left;
+        max-width: 600px;
+        width: 100%;
+        margin: 10px;
+    }
+    .rules-progress {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        border-radius: 5px;
+        background-color: #eee;
+        box-shadow: 1px 1px 1px #ddd;
+        overflow: hidden;
+        float: left;
+    }
+    .rules-progress-milestones {
+        position: relative;
+        height: 50px;
+        width: 100%;
+    }
+    .rules-progress__bar {
+        transition: width 0.5s ease;
+        height: 100%;
+        width: 0;
+        position: absolute;
+        text-align: right;
+        line-height: 30px;
+        overflow: hidden;
+        text-shadow: 1px 1px 1px #444;
+        font-weight: bold;
+        color: white;
+    }
+    .rules-progress__bar--sponsors {
+        background-color: #158282;
+    }
+    .rules-progress__bar--dfundus {
+        background-color: #00A6FD;
+    }
+    .rules-progress__total-percent {
+        line-height: 50px;
+        padding-left: 10px;
+        float: left;
+    }
+    .rules-progress__goal {
+        line-height: 50px;
+        padding-right: 10px;
+        float: right;
+    }
+    .rules-progress__milestone {
+        height: 100%;
+        width: 2px;
+        background-color: black;
+        position: absolute;
+        background-color: rgba(0,0,0,0.05);
+        left: 0;
+        opacity: 0;
+    }
+    .rules-progress__text {
+        padding-right: 5px;
+    }
+    .rules-progress__amount {
+        padding-right: 5px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+    #rules-progress--milestones .rules-progress__text {
+        display: none;
+    }
+    .rules-progress__bar--dfundus .rules-progress__text {
+        display: none;
+    }
+    .rules-progress__milestone__text {
+        position: absolute;
+        bottom: -32px;
+        color: #aaa;
+    }
