@@ -1,5 +1,5 @@
 
-    jQuery.getJSON("http://cors.io/spreadsheets.google.com/feeds/list/0Atp5ry3z0BdLdGdFNUJuWmhSNHJaSENuZE4yQms5WEE/3/public/values?alt=json", function(data) {
+    jQuery.getJSON("https://cors-anywhere.herokuapp.com/spreadsheets.google.com/feeds/list/0Atp5ry3z0BdLdGdFNUJuWmhSNHJaSENuZE4yQms5WEE/3/public/values?alt=json", function(data) {
         var sponsors = parseInt(data.feed.entry[0]['gsx$d8rulessponsors'].$t, 10);
         var dfundus = parseInt(data.feed.entry[0]['gsx$drupalfund.us'].$t, 10);
         var m1 = parseInt(data.feed.entry[1]['gsx$m1'].$t, 10);
