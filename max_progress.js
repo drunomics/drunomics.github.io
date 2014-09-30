@@ -33,7 +33,7 @@
             jQuery("#rules-progress--milestones .rules-progress__bar--sponsors .rules-progress__amount").html(sponsors + " &euro;");
         }
         jQuery("#rules-progress--milestones .rules-progress__bar--dfundus").css("width", percent_dfundus + "%");
-        if ((percent_dfundus - percent_sponsors) >= 20) {
+        if ((percent_dfundus - percent_sponsors) >= 15) {
             jQuery("#rules-progress--milestones .rules-progress__bar--dfundus .rules-progress__text").show();
             jQuery("#rules-progress--milestones .rules-progress__bar--dfundus .rules-progress__amount").html(dfundus + " &euro;");
         }
